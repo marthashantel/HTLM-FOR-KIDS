@@ -317,3 +317,49 @@ code {
   padding: 10px 24px;
   border-radius: 999px;
 }
+
+/* =============================================
+   RESOURCE CARDS
+   The Learn More section links
+============================================= */
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  text-decoration: none;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.07);
+  border: 2px solid transparent;
+  transition: border-color 0.2s, transform 0.2s;
+  min-width: 200px;
+}
+
+/* Blue border appears when you hover */
+.resource-card:hover {
+  border-color: #3B82F6;
+  transform: translateY(-2px);
+}
+
+.resource-card__icon {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+.resource-card__title {
+  font-weight: 700;
+  color: #1E293B;
+  font-size: 1rem;
+}
+
+.resource-card__sub {
+  font-size: 0.85rem;
+  color: #64748B;
+}
