@@ -172,3 +172,78 @@ code {
   color: #475569;
   margin-top: 8px;
 }
+
+/* =============================================
+   TAG CARDS
+   The colourful cards for each HTML tag
+============================================= */
+.tag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.tag-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border-top: 5px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Card lifts up when you hover over it */
+.tag-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Each card colour */
+.tag-card--blue   { border-top-color: #3B82F6; }
+.tag-card--green  { border-top-color: #22C55E; }
+.tag-card--yellow { border-top-color: #EAB308; }
+.tag-card--pink   { border-top-color: #EC4899; }
+.tag-card--purple { border-top-color: #A855F7; }
+.tag-card--orange { border-top-color: #F97316; }
+
+.tag-card__emoji {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tag-card__tag {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 4px;
+}
+
+.tag-card__name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #94A3B8;
+  margin-bottom: 12px;
+}
+
+.tag-card__desc {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.tag-card__example {
+  background: #F1F5F9;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.tag-card__code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.82rem;
+  color: #1E40AF;
+  word-break: break-all;
+}
