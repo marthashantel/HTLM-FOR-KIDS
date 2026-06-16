@@ -247,3 +247,31 @@ code {
   color: #1E40AF;
   word-break: break-all;
 }
+
+/* =============================================
+   FUN FACTS
+   The Did You Know rows
+============================================= */
+.facts__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fact {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.fact__icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
