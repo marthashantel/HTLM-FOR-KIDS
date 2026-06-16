@@ -275,3 +275,45 @@ code {
   line-height: 1;
   margin-top: 2px;
 }
+
+/* =============================================
+   CHALLENGE BOX
+   The Try It Yourself section
+============================================= */
+.challenge {
+  background: white;
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border: 2px solid #DBEAFE;
+}
+
+.challenge__intro {
+  margin-bottom: 24px;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.challenge__steps {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.challenge__steps li {
+  color: #1E293B;
+  font-size: 1rem;
+}
+
+/* The gold badge at the bottom */
+.challenge__badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #FDE68A, #FCD34D);
+  color: #78350F;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 10px 24px;
+  border-radius: 999px;
+}
