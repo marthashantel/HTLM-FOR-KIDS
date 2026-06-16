@@ -363,3 +363,59 @@ code {
   font-size: 0.85rem;
   color: #64748B;
 }
+
+/* =============================================
+   FOOTER
+   The dark strip at the bottom of the page
+============================================= */
+.footer {
+  text-align: center;
+  padding: 40px 24px;
+  background: #1E293B;
+  color: #94A3B8;
+  font-size: 0.9rem;
+}
+
+.footer strong {
+  color: white;
+}
+
+.footer__sub {
+  margin-top: 6px;
+  font-size: 0.82rem;
+  color: #64748B;
+}
+
+/* =============================================
+   RESPONSIVE
+   Makes everything look good on small screens
+   like phones and tablets
+============================================= */
+@media (max-width: 600px) {
+
+  /* Stack the anatomy boxes on top of each other */
+  .anatomy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* One card per row on small screens */
+  .tag-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack resource cards */
+  .resources {
+    flex-direction: column;
+  }
+
+  /* Less padding on the challenge box */
+  .challenge {
+    padding: 24px 18px;
+  }
+
+  /* Smaller hero title on phones */
+  .hero__title {
+    font-size: 2rem;
+  }
+}
