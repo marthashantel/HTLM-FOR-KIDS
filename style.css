@@ -80,3 +80,43 @@ code {
   max-width: 560px;
   margin: 0 auto;
 }
+
+/* =============================================
+   SECTIONS
+   Shared styles that every section uses
+============================================= */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+/* The light blue tinted sections */
+.section--tinted {
+  background: #EFF6FF;
+  max-width: 100%;
+  padding: 64px 24px;
+}
+
+/* Centre content inside tinted sections */
+.section--tinted .section__title,
+.section--tinted .section__intro,
+.section--tinted .facts__list,
+.section--tinted .resources {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section__title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1E293B;
+  margin-bottom: 12px;
+}
+
+.section__intro {
+  color: #475569;
+  margin-bottom: 36px;
+  max-width: 640px;
+}
