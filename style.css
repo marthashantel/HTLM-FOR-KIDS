@@ -120,3 +120,55 @@ code {
   margin-bottom: 36px;
   max-width: 640px;
 }
+
+/* =============================================
+   ANATOMY DIAGRAM
+   The three boxes showing start, content, end
+============================================= */
+.anatomy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: center;
+  margin: 36px 0;
+}
+
+.anatomy__part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 28px;
+  border-radius: 12px;
+  min-width: 140px;
+}
+
+/* Each part gets its own colour */
+.anatomy__part--open    { background: #DBEAFE; border: 2px solid #3B82F6; }
+.anatomy__part--content { background: #DCFCE7; border: 2px dashed #22C55E; }
+.anatomy__part--close   { background: #FEE2E2; border: 2px solid #EF4444; }
+
+.anatomy__code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1E293B;
+}
+
+.anatomy__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748B;
+}
+
+/* The yellow tip box */
+.tip {
+  background: #FFFBEB;
+  border-left: 4px solid #EAB308;
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  color: #475569;
+  margin-top: 8px;
+}
