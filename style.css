@@ -1,0 +1,37 @@
+/* =============================================
+   BASE STYLES
+   These apply to the whole page.
+   Think of this as setting the "default look"
+   before we style each section.
+============================================= */
+
+/* Remove default spacing that browsers add */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scrolling when clicking links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Page background, font, and text colour */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #F8FAFC;
+  color: #475569;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Styles for code snippets like <h1> */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background: #EFF6FF;
+  color: #3B82F6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
